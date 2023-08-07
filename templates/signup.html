@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
+    <title>Get Started - Spark</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/signpages.css' %}">
+</head>
+<body class="main-body">
+    <div id="wrapper" class="flex flex-col justify-between h-screen">
+        <div class="main-logo">
+            <a href="/">
+                <div class="logo-div" id="logo-signup">
+                    <img src="{% static 'images/spark-logo.png' %}" class="logo">
+                </div>
+            </a>
+        </div>
+        <div>
+            <div id="div-signup">
+                <h1 class="text-center lg:text-3xl text-xl font-semibold mb-6 form-text" id="text-signup">Get started</h1>
+                <div>
+                    {% for message in messages %}
+                    <h5 style="color: red;" class="form-text">{{message}}</h5>
+                    {% endfor %}
+                </div>                
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="username" placeholder="Username" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <input type="email" name="email" placeholder="Email" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <input type="password" name="password" placeholder="Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <input type="password" name="password2" placeholder="Confirm Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <button type="submit" class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full form-div" id="btn-create">Create my account</button>
+                </form>
+                <div class="text-center mt-3">
+                        <p class="text-base" id="text-create"><b>Already have an account?</b></p>
+                    </div>
+                <div class="capitalize flex hidden lg:block my-2 space-x-3 text-center text-sm"> 
+                        <button class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full form-div" id="btn-login"><a href="/">Login</a></button>
+                    </div>
+            </div>
+        </div>      
+    </div>
+    <script src="{% static 'assets/js/tippy.all.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/uikit.js' %}"></script>
+    <script src="{% static 'assets/js/simplebar.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+</html>

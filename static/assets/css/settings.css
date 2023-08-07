@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster+Two&family=Poppins:wght@400;700&family=Tektur:wght@500;900&display=swap');
+
+:root {
+    --primary-color: rgb(10, 10, 10);
+    --secondary-color: rgb(255, 0, 149);
+    --tertiary-color: rgb(255, 135, 3);
+}
+
+.back-div{
+    background-color: var(--primary-color) !important;
+}
+.form-div{
+    background-image: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color));
+}
+.info-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 3em;
+    z-index: 2;
+    background: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor:default;
+}
+.btn-div{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.6em;
+    border: 2px solid transparent;
+    transition: 0.5s ease !important;
+}
+#btn-home{
+    background: linear-gradient(270deg, var(--tertiary-color), var(--secondary-color)) padding-box,
+    linear-gradient(var(--primary-color), var(--primary-color)) border-box;
+    color: white;
+}
+#btn-home:hover{
+    color: white;
+    border: 2px solid white;
+}
+#home-a{
+    transition: 0s ease !important;
+}
+#home-a:hover{
+    color: white !important;
+}
+.side-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 2.4em;
+    line-height: 100%;
+    background: linear-gradient(45deg, var(--tertiary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.label-text{
+    font-family: 'Abel', sans-serif;
+    color: white;
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: bold;
+}
+#btn-finish{
+    font-family: 'Abel', sans-serif;
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    transition: 0.5s ease;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#btn-finish:hover{
+    border-color: white;
+}

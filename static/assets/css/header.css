@@ -1,0 +1,20 @@
+#header{
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 66px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    max-width: 1090px;
+    margin: auto;
+    width: 100%;
+    max-width: 100% !important;
+    padding: 0 30px;
+  }

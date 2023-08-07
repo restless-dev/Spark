@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster+Two&family=Poppins:wght@400;700&family=Tektur:wght@500;900&display=swap');
+
+:root {
+    --primary-color: rgb(10, 10, 10);
+    --secondary-color: rgb(255, 0, 149);
+    --tertiary-color: rgb(255, 135, 3);
+}
+
+.div-background{
+    background-color: red !important;
+}
+
+.main-body{
+    background-color: var(--primary-color) !important;
+}
+
+#wrapper{
+    background-color: var(--primary-color) !important;
+}
+
+.logo-div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+#logo-signin{
+    top: 43%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+}
+#logo-signup{
+    top: 50%;
+    left: 15%;
+    height: 270px;
+    width: 270px;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    z-index: 3;
+}
+.title{
+    font-family: 'Tektur', cursive;
+    font-size: 5em;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    top: 63%;
+    left: 50%;
+    position: absolute;
+    background: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor:default;
+}
+.login-div{
+    max-width: 40%;
+    width: 23%;
+    right: -8%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.form-div{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.6em;
+    border: 2px solid transparent;
+    transition: 0.5s ease !important;
+}
+.form-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.4em;
+}
+#text-create{
+    background: linear-gradient(90deg, var(--tertiary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+}
+#btn-login{
+    background: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color)) padding-box,
+    linear-gradient(var(--primary-color), var(--primary-color)) border-box !important;
+    color: rgb(229, 231, 235);
+    font-size: 1.8em !important;
+}
+#btn-login:hover{
+    color: white;
+    border: 2px solid white;
+}
+#btn-create{
+    background: linear-gradient(45deg, var(--tertiary-color), var(--secondary-color)) padding-box,
+    linear-gradient(var(--primary-color), var(--primary-color)) border-box;
+    color: rgb(229, 231, 235);
+}
+#btn-create:hover{
+    color: white;
+    border: 2px solid white;
+}
+#create-a{
+    transition: 0s ease !important;
+}
+#create-a:hover{
+    color: white !important;
+}
+.info-div {
+    padding: 20px;
+    position: absolute;
+    max-width: 30%;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: default;
+}
+#info-p{
+    font-family: 'Abel', sans-serif;
+    font-size: 3.4em;
+    line-height: 100%;
+    background: linear-gradient(45deg, var(--tertiary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.git-icon{
+    transition: 0.8s ease;
+    color: var(--primary-color);
+    height: 45px;
+    width: 50px;
+    background-image: linear-gradient(45deg, var(--tertiary-color), var(--secondary-color));
+    border-radius: 50px;
+    border: solid 2px var(--primary-color);
+    padding: 2px 0px 2px 0px;
+}
+.git-icon:hover{
+    color: rgb(255, 255, 255);
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color:var(--primary-color);
+
+}
+.git-div{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    height: 50px;
+}
+#text-signup{
+    font-family: 'Abel', sans-serif;
+    font-size: 2.4em;
+    background: linear-gradient(90deg, var(--tertiary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;    cursor: default;
+}
+#logo-signup{
+
+}
+#div-signup{
+    max-width: 40%;
+    width: 35%;
+    right: 15%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
